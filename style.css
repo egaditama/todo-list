@@ -1,0 +1,245 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #ffffff;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.3;
+    font-weight: 800;
+    color: #111827;
+    font-family: Manrope;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    max-width: 65ch;
+    font-family: Manrope;
+}
+
+/* Layout Utilitties */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid #e5e7eb;
+    background-color: #ffffff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 72px;
+}
+
+header .container h1 {
+    color: #05AD98;
+}
+
+header .container .progress {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+}
+
+header .container .progress div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border-radius: 999px;
+    padding: 0px 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    font-weight: 600;
+    font-size: 1rem;
+    justify-content: space-evenly;
+
+    /* same size */
+    min-width: 90px;      
+    height: 40px;  
+}
+
+.progress .done i {
+    color: #22c55e;
+    font-size: 1.1rem;
+}
+
+.progress .ongoing i {
+    color: #facc15;
+    font-size: 1.1rem;
+}
+
+
+/* Main */
+main {
+    margin-top: 2rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+main .container .input-box {
+    width: 100%;
+    max-width: 600px;
+    gap: 1rem;                 /* ⬅️ jangan 4rem */
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #05AD98;
+}
+
+main .container .input-box input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    font-family: Manrope;
+}
+
+main .container .input-box button {
+    background: #05AD98;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-family: Manrope;
+}
+
+main .container .input-box button:hover {
+    background-color: #058b7c;
+}
+
+main .container .todo-item {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Manrope;
+}
+
+main .container .todo-item.ongoing {
+    padding: 1rem;
+    border-radius: 999px;
+    color: #05AD98;
+    font-weight: 600;
+    background-color: #fff;
+    border: #05AD98 1px solid;
+}
+
+main .container .todo-item.done {
+    padding: 1rem;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: line-through;
+    background-color: #05AD98;
+    border: #05AD98 1px solid;
+}
+
+.check-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #05AD98;
+    transition: color 0.2s ease;
+}
+
+.todo-item.done .check-btn {
+    color: #fff;
+}
+
+.todo-item.ongoing .delete {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #BBBFBF;
+    transition: color 0.2s ease;
+}
+
+.todo-item.done .delete {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #BBBFBF;
+    transition: color 0.2s ease;
+}
+
+
+
+
+
+/* Responsive */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>To-do List</h1>
+
+            <div class="progress">
+                <div class="done">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>0</span>
+                </div>
+                <div class="ongoing">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main data-aos="fade-up">
+        <h1>What do you want to do today? 😊</h1>
+        <div class="container">
+            <div class="input-box">
+                <input type="text" placeholder="ex : Membuat kue ulang tahun...">
+                <button>Submit</button>
+            </div>
+
+        <!-- 
+        <div class="todo-item ongoing">
+            <button class="check-btn" aria-label="Mark as done">
+                 <i class="fa-regular fa-circle"></i>
+            </button>
+            <span class="task-text">Mengerjakan pekerjaan rumah</span>
+            <div class="actions">
+                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="todo-item done">
+            <button class="check-btn" aria-label="Mark as done">
+                 <i class="fa-solid fa-circle-check"></i>
+            </button>
+            <span class="task-text">Mengerjakan pekerjaan rumah</span>
+            <div class="actions">
+                <button class="delete">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+        </div> 
+        -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
