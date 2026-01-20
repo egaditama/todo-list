@@ -71,6 +71,3 @@ container.addEventListener("click", (e) => {
     updateCount();
 });
 
-
-
-updateCounter(); // load count
