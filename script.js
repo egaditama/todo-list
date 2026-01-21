@@ -36,7 +36,6 @@ function updateCount(){
     ongoingCount.textContent = ongoingTodos;
 }
 
-
 submitBtn.addEventListener("click", ()=> {
     const value = input.value.trim();
 
@@ -46,6 +45,18 @@ submitBtn.addEventListener("click", ()=> {
     input.value = "";
     updateCount();
 });
+
+// Enter Key
+input.addEventListener("keydown", (e) => {
+    const value = input.value.trim();
+    if(!value) return;
+
+    if (e.key === "Enter") {
+        createTodo(value);
+        input.value = "";
+        updateCount();
+    }
+}); 
 
 
 container.addEventListener("click", (e) => {
