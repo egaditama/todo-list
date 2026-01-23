@@ -239,5 +239,52 @@ main .container .todo-item.done {
 }
 
 
+/* Responsive */
 
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+    header .container {
+        flex-wrap: nowrap;
+    }
+
+    header .container h1 {
+        font-size: 1.75rem;
+    }
+
+    header .container .progress {
+        width: auto;
+    }
+
+    main h1 {
+        font-size: 2.25rem;
+    }
+
+    main .container .input-box {
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+    }
+
+    main .container .todo-item,
+    main .container .input-box {
+        max-width: 600px;
+        margin-inline: auto;
+    }
+}
 
