@@ -241,7 +241,7 @@ main .container .todo-item.done {
 
 /* Responsive */
 
-
+/* Tablet */
 @media (min-width: 768px) {
 
     .container {
