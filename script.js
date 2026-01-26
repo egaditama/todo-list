@@ -6,7 +6,8 @@ const container = document.querySelector("main .container");
 const doneCount = document.querySelector(".progress .done span");
 const ongoingCount = document.querySelector(".progress .ongoing span");
 
-
+const charInfo = document.getElementById("char-info");
+const charMax = 50;
 
 function createTodo(text){
     const todo = document.createElement("div");
@@ -57,6 +58,18 @@ input.addEventListener("keydown", (e) => {
         updateCount();
     }
 }); 
+
+// Max Chars
+input.addEventListener("input", () => {
+    const currentLength = input.value.length;
+    charInfo.textContent = `${currentLength}/${charMax}`;
+
+    if (currentLength === charMax) {
+        charInfo.style.red = "red";
+    } else {
+        charInfo.style.color = "gray";
+    }
+});
 
 
 container.addEventListener("click", (e) => {

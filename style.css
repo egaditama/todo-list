@@ -199,6 +199,9 @@ main .container .todo-item {
     align-items: center;
     justify-content: space-between;
     font-family: Manrope;
+    /* Text wrap */
+    word-break: break-word; 
+    overflow-wrap: break-word;
 }
 
 main .container .todo-item.ongoing {
