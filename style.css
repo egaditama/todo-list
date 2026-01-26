@@ -83,6 +83,19 @@ header .container h1 {
     color: #05AD98;
 }
 
+header .container .logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+header .container .logo img {
+    /* display: block; */
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
 header .container .progress {
     display: flex;
     align-items: center;
@@ -285,6 +298,13 @@ main .container .todo-item.done {
     main .container .input-box {
         max-width: 600px;
         margin-inline: auto;
+    }
+
+    header .container .logo img {
+        /* display: block; */
+        width: 180px;
+        height: auto;
+        max-width: 100%;
     }
 }
 
