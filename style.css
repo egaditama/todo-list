@@ -100,7 +100,6 @@ header .container .progress {
     display: flex;
     align-items: center;
     gap: 8px;
-    background: #fff;
 }
 
 header .container .progress div {
@@ -130,11 +129,24 @@ header .container .progress div {
     font-size: 1.1rem;
 }
 
+/* Header - Theme Toggle */
+.progress button {
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 999px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+#theme-toggle:hover {
+  transform: scale(1.05);
+}
 
 /* Main */
 main {
     margin-top: 2rem;
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -311,3 +323,47 @@ main .container .todo-item.done {
     }
 }
 
+/* ================= DARK MODE ================= */
+body.dark {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+body.dark header {
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+body.dark .input-box {
+  background: #1e293b;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+body.dark .todo-item.ongoing {
+  background: #1e293b;
+  border: 1px solid #05AD98;
+  color: #05AD98;
+}
+
+body.dark .todo-item.done {
+  background: #05AD98;
+  color: white;
+}
+
+body.dark input {
+  color: white;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+  color: white;
+}
+
+body.dark header .container .progress div {
+    background-color: #334155;
+}
+
+body.dark header .container .progress button {
+    background-color: #334155;
+}

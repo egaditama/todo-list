@@ -9,6 +9,8 @@ const ongoingCount = document.querySelector(".progress .ongoing span");
 const charInfo = document.getElementById("char-info");
 const charMax = 50;
 
+const toggleBtn = document.getElementById("theme-toggle");
+
 function createTodo(text){
     const todo = document.createElement("div");
     todo.className = "todo-item ongoing";
@@ -95,3 +97,20 @@ container.addEventListener("click", (e) => {
     updateCount();
 });
 
+// Theme toggle (Dark mode & Light mode)
+if (localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark");
+    toggleBtn.textContent = "☀️";
+} 
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        localStorage.setItem("theme", "dark");
+        toggleBtn.textContent = "☀️";
+    } else {
+        localStorage.setItem("theme", "light")
+        toggleBtn.textContent = "🌙"
+    }
+});
