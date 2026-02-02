@@ -340,7 +340,8 @@ body.dark header {
 
 body.dark .input-box {
   background: #1e293b;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.4); */
+  box-shadow: 0 4px 12px #05AD98;
 }
 
 body.dark .todo-item.ongoing {
