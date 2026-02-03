@@ -329,13 +329,13 @@ main .container .todo-item.done {
 body.dark {
   background: #0f172a;
   color: #e2e8f0;
-  transition: background 0.2s ease;
+  transition: background 0.1s ease;
 }
 
 body.dark header {
   background: #1e293b;
   border-bottom: 1px solid #334155;
-  transition: background 0.2s ease;
+  transition: background 0.1s ease;
 }
 
 body.dark .input-box {
